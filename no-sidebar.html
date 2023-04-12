@@ -6,10 +6,14 @@
 -->
 <html>
 	<head>
-		<title>Untitled</title>
+		<title>Tus Clases</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="icon" type="image/png" href="/images/favicon.png"/>
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/estilos_form.css" />
+		
+		<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
 	</head>
 	<body class="is-preload no-sidebar">
 		<div id="page-wrapper">
@@ -20,34 +24,16 @@
 
 						<!-- Logo -->
 							<div id="logo">
-								<h1><a href="index.html">Verti</a></h1>
-								<span>by Pixelarity</span>
+								<h1><a href="index.html">Tus Clases</a></h1>
+								<span>por Alejandro Egaña</span>
 							</div>
 
 						<!-- Nav -->
 							<nav id="nav">
 								<ul>
-									<li><a href="index.html">Welcome</a></li>
-									<li>
-										<a href="#">Dropdown</a>
-										<ul>
-											<li><a href="#">Lorem ipsum dolor</a></li>
-											<li><a href="#">Magna phasellus</a></li>
-											<li>
-												<a href="#">Phasellus consequat</a>
-												<ul>
-													<li><a href="#">Lorem ipsum dolor</a></li>
-													<li><a href="#">Phasellus consequat</a></li>
-													<li><a href="#">Magna phasellus</a></li>
-													<li><a href="#">Etiam dolore nisl</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Veroeros feugiat</a></li>
-										</ul>
-									</li>
-									<li><a href="left-sidebar.html">Left Sidebar</a></li>
-									<li><a href="right-sidebar.html">Right Sidebar</a></li>
-									<li class="current"><a href="no-sidebar.html">No Sidebar</a></li>
+									<li class="current"><a href="index.html">Inicio</a></li>
+									<li><a href="right-sidebar.html">Acerca de</a></li>
+									<li><a href="no-sidebar.html">Contacto</a></li>
 								</ul>
 							</nav>
 
@@ -57,36 +43,23 @@
 			<!-- Main -->
 				<div id="main-wrapper">
 					<div class="container">
-						<div id="content">
+						<div id="contenido">
 
 							<!-- Content -->
-								<article>
-
-									<h2>No Sidebar</h2>
-
-									<p>Phasellus quam turpis, feugiat sit amet ornare in, hendrerit in lectus.
-									Praesent semper mod quis eget mi. Etiam eu ante risus. Aliquam erat volutpat.
-									Aliquam luctus et mattis lectus sit amet pulvinar. Nam turpis nisi
-									consequat etiam lorem ipsum dolor sit amet nullam.</p>
-
-									<h3>Cras adipiscing scelerisque</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac quam risus, at tempus
-									justo. Sed dictum rutrum massa eu volutpat. Quisque vitae hendrerit sem. Pellentesque lorem felis,
-									ultricies a bibendum id, bibendum sit amet nisl. Mauris et lorem quam. Maecenas rutrum imperdiet
-									vulputate. Nulla quis nibh ipsum, sed egestas justo. Morbi ut ante mattis orci convallis tempor.
-									Etiam a lacus a lacus pharetra porttitor quis accumsan odio. Sed vel euismod nisi. Etiam convallis
-									rhoncus dui quis euismod. Maecenas lorem tellus, congue et condimentum ac, ullamcorper non sapien.
-									Donec sagittis massa et leo semper a scelerisque metus faucibus. Morbi congue mattis mi.
-									Phasellus sed nisl vitae risus tristique volutpat. Cras rutrum commodo luctus.</p>
-
-									<p>Phasellus odio risus, faucibus et viverra vitae, eleifend ac purus. Praesent mattis, enim
-									quis hendrerit porttitor, sapien tortor viverra magna, sit amet rhoncus nisl lacus nec arcu.
-									Suspendisse laoreet metus ut metus imperdiet interdum aliquam justo tincidunt. Mauris dolor urna,
-									fringilla vel malesuada ac, dignissim eu mi. Praesent mollis massa ac nulla pretium pretium.
-									Maecenas tortor mauris, consectetur pellentesque dapibus eget, tincidunt vitae arcu.
-									Vestibulum purus augue, tincidunt sit amet iaculis id, porta eu purus.</p>
-
-								</article>
+							<h2>Contacto</h2>
+							<form action="codigo.php">
+								<label for="nombre">Nombre</label>
+								<input type="text" id="nombre" placeholder="Nombre">
+								
+								<label for="email">Correo</label>
+								<input type="email" id="email" placeholder="info@gmail.com" multiple required>
+								
+								<label for="area">Mensaje:</label>
+								<textarea name="area" id="area"></textarea>
+								
+								<input type="submit" value="Enviar" class="sub1">
+								<input type="reset" value="Limpiar" class="sub2">
+							</form>
 
 						</div>
 					</div>
@@ -156,6 +129,7 @@
 										<p>1234 Fictional Road<br />
 										Nashville, TN 00000<br />
 										(800) 555-0000</p>
+										<a href="https://api.whatsapp.com/send?phone=56996332978" class="btn-wsp" target="_blank"><i class="fa fa-whatsapp icono"></i></a>
 									</section>
 
 							</div>

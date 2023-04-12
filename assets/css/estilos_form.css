@@ -1,0 +1,64 @@
+form{
+    border: 1px solid lightblue;
+    background-color: rgb(254, 254, 254);
+    min-width: 50%;
+    padding: 20px;
+    margin:1em;
+    font-size: 10px;
+    height: 500px;
+    color:#999;
+    display: inline-block;
+}
+
+form label{
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+    text-align: left;
+}
+form input{
+
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #999;
+    margin-top: 0.8em;
+}
+textarea{
+
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    resize: vertical;
+    max-height: 300px;
+    min-height: 100px;
+}
+
+.sub1{
+    float: left;
+    width: 40%;
+    height: 40px;
+    text-align: center;
+    
+}
+
+.sub2{
+
+    float: right;
+    width: 40%;
+    height: 40px;
+    text-align: center;
+}
+
+.sub1:hover{
+
+    background-color:lightblue;
+}
+
+#main-wrapper .container #contenido{
+
+   
+    text-align: center;
+    
+}
