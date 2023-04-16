@@ -19,6 +19,9 @@ $message = "
 <p>Comentarios: $comentarios </p>
 </body>
 </html>";
- echo 'Gracias por comunicarse con nosotros';
+ 
 mail($to, $subject, $message, $headers);
+//header("location:no-sidebar.html");
+//return;
+echo "<script>alert('Formulario enviado');window.location.href='index.html';</script>";
 ?>
