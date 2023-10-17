@@ -5,91 +5,109 @@
 	License: pixelarity.com/license
 -->
 <html>
-	<head>
-		<title>Tus Clases</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="icon" type="image/png" href="/images/favicon.png"/>
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/estilos_form.css" />
-		
-		<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-	</head>
-	<body class="is-preload no-sidebar">
-		<div id="page-wrapper">
 
-			<!-- Header -->
-				<div id="header-wrapper">
-					<header id="header" class="container">
+<head>
+	<title>Tus Clases</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="icon" type="image/png" href="/images/favicon.png" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/estilos_form.css" />
 
-						<!-- Logo -->
-							<div id="logo">
-								<h1><a href="index.html">Tus Clases</a></h1>
-								<span>por Alejandro Egaña</span>
-							</div>
+	<script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+	<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+	<script src="https://www.google.com/recaptcha/api.js?hl=es" async defer></script>
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current"><a href="index.html">Inicio</a></li>
-									<li><a href="right-sidebar.html">Acerca de</a></li>
-									<li><a href="no-sidebar.php">Contacto</a></li>
-								</ul>
-							</nav>
+</head>
 
-					</header>
+<body class="is-preload no-sidebar">
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<div id="header-wrapper">
+			<header id="header" class="container">
+
+				<!-- Logo -->
+				<div id="logo">
+					<h1><a href="index.html">Tus Clases</a></h1>
+					<span>por Alejandro Egaña</span>
 				</div>
 
-			<!-- Main -->
-				<div id="main-wrapper">
-					<div class="container">
-						<div id="contenido">
+				<!-- Nav -->
+				<nav id="nav">
+					<ul>
+						<li class="current"><a href="index.html">Inicio</a></li>
+						<li><a href="right-sidebar.html">Acerca de</a></li>
+						<li><a href="no-sidebar.php">Contacto</a></li>
+					</ul>
+				</nav>
 
-							<!-- Content -->
-							<h2>Contacto</h2>
-							<form action="envio.php" method="post">
-								<label for="nombre">Nombre</label>
-								<input type="text" name="nombre" id="nombre" placeholder="Nombre">
-								
-								<label for="email">Correo</label>
-								<input type="email" name="email" id="email" placeholder="info@gmail.com" multiple required>
-								
-								<label for="area">Mensaje:</label>
-								<textarea name="comentario" id="area"></textarea>
-								
-								<input type="submit" value="Enviar" class="sub1">
-								<input type="reset" value="Limpiar" class="sub2">
-							</form>
+			</header>
+		</div>
 
-						</div>
-					</div>
+		<!-- Main -->
+		<div id="main-wrapper">
+			<div class="container">
+				<div id="contenido">
+
+					<!-- Content -->
+					<h2>Contacto</h2>
+					<form action="envio.php" method="post" id="formulario" onsubmit="return submitUserForm();">
+						<label for="nombre">Nombre</label>
+						<input type="text" name="nombre" id="nombre" placeholder="Nombre">
+
+						<label for="email">Correo</label>
+						<input type="email" name="email" id="email" placeholder="info@gmail.com" multiple required>
+
+						<label for="area">Mensaje:</label>
+						<textarea name="comentario" id="area"></textarea>
+
+						<!-- <!-- <input type="submit" value="Enviar" class="sub1">
+						<input type="reset" value="Limpiar" class="sub2"> -->
+
+						<!-- <div class="g-recaptcha" data-sitekey="6LeZPagoAAAAAOSg1wjaoYYfgsLQXlX_XngEvPNP"></div>
+						<br /> -->
+						<div class="g-recaptcha" data-sitekey="6LeZPagoAAAAAOSg1wjaoYYfgsLQXlX_XngEvPNP"
+							data-callback="verifyCaptcha"></div>
+						<div id="g-recaptcha-error"></div>
+						<input type="submit" value="Enviar" class="sub1">
+						<input type="reset" value="Limpiar" class="sub2">
+
+					</form>
+
+
 				</div>
+			</div>
+		</div>
 
-				<!-- Footer -->
-				<div id="footer-wrapper">
-					
-							
+		<!-- Footer -->
+		<div id="footer-wrapper">
 
-					<!-- Links -->
-				
-				<div class="col-3 col-6-medium col-12-small">
 
-					<!-- Contact -->
-						<section class="widget contact last">
-							<ul>
-								
-								<li><a href="https://www.instagram.com/aeganaviedma/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-								
-								<li><a href="https://www.linkedin.com/in/alejandro-ega%C3%B1a-viedma-26456ab5/" target="_blank" class="icon brands fa-linkedin"><span class="label">Pinterest</span></a></li>
-							</ul>
-							<p>Alejandro Egaña<br />
-							Limache-Quinta Región-Chile<br />
-							+56996332978</p>
-						</section>
-						<a href="https://api.whatsapp.com/send?phone=56996332978" class="btn-wsp" target="_blank"><i class="fa fa-whatsapp icono"></i></a>
-				</div>
-				
-			
+
+			<!-- Links -->
+
+			<div class="col-3 col-6-medium col-12-small">
+
+				<!-- Contact -->
+				<section class="widget contact last">
+					<ul>
+
+						<li><a href="https://www.instagram.com/aeganaviedma/" target="_blank"
+								class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+
+						<li><a href="https://www.linkedin.com/in/alejandro-ega%C3%B1a-viedma-26456ab5/" target="_blank"
+								class="icon brands fa-linkedin"><span class="label">Pinterest</span></a></li>
+					</ul>
+					<p>Alejandro Egaña<br />
+						Limache-Quinta Región-Chile<br />
+						+56996332978</p>
+				</section>
+				<a href="https://api.whatsapp.com/send?phone=56996332978" class="btn-wsp" target="_blank"><i
+						class="fa fa-whatsapp icono"></i></a>
+			</div>
+
+
 			<div class="row">
 				<div class="col-12">
 					<div id="copyright">
@@ -99,20 +117,40 @@
 					</div>
 				</div>
 			</div>
-		
-	</div>
 
 		</div>
 
-		<!-- Scripts -->
+	</div>
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+	<!-- Scripts -->
 
-	
-	</body>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		function onSubmit(token) {
+			document.getElementById("formulario").submit();
+		}
+	</script>
+	<script>
+		function submitUserForm() {
+			var response = grecaptcha.getResponse();
+			if (response.length == 0) {
+				document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+				return false;
+			}
+			return true;
+		}
+
+		function verifyCaptcha() {
+			document.getElementById('g-recaptcha-error').innerHTML = '';
+		}
+	</script>
+
+
+</body>
+
 </html>

@@ -18,10 +18,7 @@ $message = "
 <p>Email: $email </p>
 <p>Comentarios: $comentarios </p>
 </body>
-</html>";
- 
-mail($to, $subject, $message, $headers);
-//header("location:no-sidebar.html");
-//return;
+</html>"; 
+mail($to, $subject, $message, $headers); 
 echo "<script>alert('Formulario enviado');window.location.href='index.html';</script>";
 ?>
